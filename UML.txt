@@ -1,0 +1,68 @@
+Diagrama UML:
+
++-----------------+
+|     Cliente     |
++-----------------+
+| - rut: int      |
+| -nombre: str    |
+| -email: str     |
+| -telefono: int  |
+| -direccion: str |
++-----------------+
+| validar_datos() |
+|    __str__()    |
++-----------------+
+
+HEREDAN DE Cliente
+
++---------------------+
+|    ClienteRegular   |
++---------------------+
+| - rut: int          |
+| -nombre: str        |
+| -email: str         |
+| -telefono: int      |
+| -direccion: str     |
+|                     |
+|     SE AGREGA:      |
+| + descuento: int    |
++---------------------+
+| aplicar_descuento() |
++---------------------+
+
++------------------------------+
+|      ClienteCorporativo      |
++------------------------------+
+| - rut: int                   |
+| -nombre: str                 |
+| -email: str                  |
+| -telefono: int               |
+| -direccion: str              |
+|                              |
+| - empresa: str               |
+| -contacto_representante: str |
++------------------------------+
+|                              |
++------------------------------+
+
+Maneja relacion con Cliente
++--------------------+
+|   GestorClientes   |
++--------------------+
+|                    |
++--------------------+
+|   crear_cliente()  |
+|  editar_cliente()  |
+| eliminar_cliente() |
+|  listar_clientes() |
++--------------------+
+
++------------------------------+
+|           Validador          |
++------------------------------+
+|                              |
++------------------------------+
+|   validar_email() {static}   |
+|  validar_telefono() {static} |
+| validar_direccion() {static} |
++------------------------------+
