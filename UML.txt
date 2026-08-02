@@ -1,28 +1,27 @@
 Diagrama UML:
 
-+-----------------+
-|     Cliente     |
-+-----------------+
-| - rut: int      |
-| -nombre: str    |
-| -email: str     |
-| -telefono: int  |
-| -direccion: str |
-+-----------------+
-| validar_datos() |
-|    __str__()    |
-+-----------------+
++--------------------+
+|     Cliente        |
++--------------------+
+| -nombre: str       |
+| -email: str        |
+| -telefono: int     |
+| +id_clientes: int  |
+| +tipo: str         |
++--------------------+
+| validar_datos()    |
+|    __str__()       |
++--------------------+
 
 HEREDAN DE Cliente
 
 +---------------------+
 |    ClienteRegular   |
 +---------------------+
-| - rut: int          |
 | -nombre: str        |
 | -email: str         |
 | -telefono: int      |
-| -direccion: str     |
+| - tipo: str         |
 |                     |
 |     SE AGREGA:      |
 | + descuento: int    |
