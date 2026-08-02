@@ -77,3 +77,20 @@ class Datos:
     
     def sobrescribir_clientes(self, clientes):
         pass #AGREGAR EXPRESION PARA EDITAR CLIENTE
+
+#SE INGRESAN Y ALMACENAN LOS DATOS DE LOS CLIENTES
+class GestorClientes:
+    def __init__():
+        pass
+
+    def obtener_next_id(self):
+        pass
+
+    def registrar_cliente(elf, cliente: Cliente):
+        pass
+
+    def eliminar_cliente():
+        pass
+
+    def editar_cliente():
+        pass

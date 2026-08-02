@@ -65,3 +65,7 @@ Maneja relacion con Cliente
 |  validar_telefono() {static} |
 | validar_direccion() {static} |
 +------------------------------+
+
+FUENTE
+
+re REGULAR EXPRESSIONS = https://stackabuse.com/python-validate-email-address-with-regular-expressions-regex/
